@@ -8,7 +8,7 @@ function firstNonRepeatedChar(str) {
     const char = str.charAt(i);
     charCount[char] = (charCount[char] || 0) + 1;
 
-
+  }
 	for (let i = 0; i < str.length; i++) {
     const char = str.charAt(i);
     if (charCount[char] === 1) {
@@ -21,11 +21,6 @@ function firstNonRepeatedChar(str) {
   // If no non-repeated character is found, return null or a message
   return null;
 }
-}
+
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
-if (result !== null) {
-  alert(`${result}`);
-} else {
-  alert("null");
-}
